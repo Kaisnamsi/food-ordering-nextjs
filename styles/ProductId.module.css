@@ -1,0 +1,164 @@
+.container{
+  height: calc(100vh - 100px);
+  display: flex;
+}
+
+.left{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right{
+  flex:1;
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.imgContainer{
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+
+.imgContainer img{
+  object-fit: contain;
+}
+
+.price{
+  text-align: center;
+  width: 10%;
+  color: #d1411e;
+  font-size: 1.8rem;
+  font-weight: 400;
+  border-bottom: 1px solid #d1411e;
+}
+
+.sizes{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.size{
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.size:hover{
+  cursor: pointer;
+}
+
+.size:nth-child(2){
+  width: 50px;
+  height: 50px;
+}
+
+.size:last-child{
+  width: 70px;
+  height: 70px;
+}
+
+.number{
+  position: absolute;
+  right: -20px;
+  top: -10px;
+  border-radius: 10px;
+  padding: 0px 5px;
+  background-color: rgb(41, 166, 166);
+  color: white;
+}
+
+.ingredients{
+  display: flex;
+  width: 50%;
+  gap: 20px;
+}
+
+.option{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.checkbox{
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+.add{
+  margin-top: 35px;
+  display: flex;
+}
+
+.quantity{
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.button{
+  height: 30px;
+  width: 80px;
+  margin-left: 5px;
+  color: white;
+  background: #d1411e;
+  border: none;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+  .container{
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .imgContainer{
+    width: 70vw;
+    height: 70vw;
+  }
+
+  .price{
+    width: 20%;
+  }
+
+  .right{
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+  }
+
+  .sizes{
+    width: 80%;
+  }
+
+  .ingredients{
+    width: 100%;
+  }
+
+  .option{
+    font-size: 0.9rem;
+    margin-right: 10px;
+    border: 1px solid lightgray;
+    padding: 4px 2px;
+  }
+  
+  .checkbox{
+    margin-right: 0;
+  }
+
+  .add{
+    margin-top: 10px;
+  }
+}
